@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Найти надежный трансфер из аэропорта и забронировать он-лайн| Intui.Travel</title>
+  <title>Intui.Travel</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -75,5 +75,46 @@
         </div>
     </div>
 </header>
+
+<main>
+  <section class="auth">
+    <h1 class="visually-hidden">Форма регистрации</h1>
+    <div class="auth__wrapper">
+      <p class="auth__greeting">Войдите в личный кабинет или зарегистрируйтесь</p>
+      <h2>Добро пожаловать!</h2>
+
+      <div class="auth__tab-wrapper">
+        <div class="auth__tab-login">Авторизация</div>
+        <div class="auth__tab-registration">Регистрация</div>
+      </div>
+
+      <div class="auth__login-form-wrapper">
+        <form class="auth__login-form login-form" action="#">
+          <p>Авторизируйтесь</p>
+          <a href="https://intui.travel/"><img alt="Логотип трансферов Intui.Travel трансфер из аэропорта" src="img/logo_travel.png"></a>
+          <ul class="login-form__list">
+            <li class="login-form__item">
+              <label for="t_email">E-mail:</label>
+              <input type="text" name="t_email" id="t_email" value="">
+            </li>
+            <li class="login-form__item">
+              <label for="t_email">Пароль:</label>
+              <input type="text" name="t_email" id="t_email" value="">
+            </li>
+          </ul>
+          <a rel="nofollow" href="#" title="Восстановить пароль?" name="reminder_link">Востановить пароль?</a>
+          <button class="login-form__submit" type="submit" rel="nofollow" href="#" title="Войти">Войти</button>
+        </form>
+        <!-- <div class="auth__login-social social">
+          <b>Или войти через:</b>
+          <div class="social__link">
+            <img alt="Изображение вконтакте" src="img/icon-access-vk.png" class="social__vkontakte" id="oauth_vk" style="cursor:pointer;">
+            <img alt="Изображение facebook" src="img/icon-access-fb.png" class="social__facebook" id="oauth_fb" style="cursor:pointer;">
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+</main>
 </body>
 </html>
