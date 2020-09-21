@@ -1,3 +1,92 @@
-h1 {
-  color: red;
+@import "scaffolding.scss";
+
+header {
+  border-top: 3px solid #da251c;
+}
+
+header,
+footer {
+  max-width: 1070px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.f {
+  display: flex;
+  align-items: center;
+}
+
+.f > div {
+  padding: 5px;
+}
+
+a {
+  color: #2968a6;
+}
+
+.menu {
+  position: relative;
+  padding: 5px 10px;
+}
+
+.menu input[type="radio"] {
+  display: none;
+}
+
+.fi-right {
+  margin-left: auto;
+}
+
+#lang_curr label.flag {
+  text-transform: uppercase;
+}
+
+header .flag.ru {
+  background: url("../img/ru.svg") no-repeat 5px center;
+  background-size: auto;
+}
+
+header .flag {
+  padding: 8px 8px 8px 32px;
+  border: 1px solid #dee2ea;
+  background-size: 20px !important;
+  height: auto;
+}
+
+.flag {
+  width: 16px;
+  height: 11px;
+  background: url('/public/images/frontend/new_design/flags.png') no-repeat;
+}
+
+.menu .dropdown::before {
+  content: "▲";
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  top: -18px;
+  right: 20%;
+  color: #102d6d;
+}
+
+.menu .dropdown {
+
+  display: none;
+  width: 270px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 15px);
+  padding: 10px;
+  border-top: 2px solid #102d6d;
+  box-shadow: 0 2px 7px -3px;
+  background: #ffffff;
+  z-index: 999;
+}
+
+.f.w {
+  flex-wrap: wrap;
+}
+
+.xm {
+  display: none;
 }
