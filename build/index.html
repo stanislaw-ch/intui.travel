@@ -76,45 +76,108 @@
     </div>
 </header>
 
-<main>
-  <section class="auth">
-    <h1 class="visually-hidden">Форма регистрации</h1>
-    <div class="auth__wrapper">
-      <p class="auth__greeting">Войдите в личный кабинет или зарегистрируйтесь</p>
+  <main>
+    <section class="auth">
+      <h1 class="visually-hidden">Форма регистрации</h1>
       <h2>Добро пожаловать!</h2>
+      <p class="auth__greeting">Войдите в личный кабинет или зарегистрируйтесь</p>
 
-      <div class="auth__tab-wrapper">
-        <div class="auth__tab-login">Авторизация</div>
-        <div class="auth__tab-registration">Регистрация</div>
-      </div>
+      <div class="auth__wrapper">
+        <div class="auth__tab-wrapper">
+          <div class="auth__tab">Авторизация</div>
+          <div class="auth__tab auth__tab--active">Регистрация</div>
+        </div>
 
-      <div class="auth__login-form-wrapper">
-        <form class="auth__login-form login-form" action="#">
-          <p>Авторизируйтесь</p>
-          <a href="https://intui.travel/"><img alt="Логотип трансферов Intui.Travel трансфер из аэропорта" src="img/logo_travel.png"></a>
-          <ul class="login-form__list">
-            <li class="login-form__item">
-              <label for="t_email">E-mail:</label>
-              <input type="text" name="t_email" id="t_email" value="">
-            </li>
-            <li class="login-form__item">
-              <label for="t_email">Пароль:</label>
-              <input type="text" name="t_email" id="t_email" value="">
-            </li>
-          </ul>
-          <a rel="nofollow" href="#" title="Восстановить пароль?" name="reminder_link">Востановить пароль?</a>
-          <button class="login-form__submit" type="submit" rel="nofollow" href="#" title="Войти">Войти</button>
-        </form>
-        <!-- <div class="auth__login-social social">
-          <b>Или войти через:</b>
-          <div class="social__link">
-            <img alt="Изображение вконтакте" src="img/icon-access-vk.png" class="social__vkontakte" id="oauth_vk" style="cursor:pointer;">
-            <img alt="Изображение facebook" src="img/icon-access-fb.png" class="social__facebook" id="oauth_fb" style="cursor:pointer;">
+        <div class="auth__form-wrapper auth__form-wrapper--hidden">
+          <form class="auth__form form" action="#">
+            <div class="form__header-wrapper">
+              <p>Авторизируйтесь</p>
+              <a href="https://intui.travel/">
+                <img alt="Логотип трансферов Intui.Travel трансфер из аэропорта" src="img/logo_travel.png">
+              </a>
+            </div>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="visually-hidden" for="tab_login">Логин
+                </label>
+                <input type="text" name="tab_login" id="tab_login" placeholder="Логин" required="">
+              </li>
+              <li class="form__item">
+                <label class="visually-hidden" for="tab_password">Пароль
+                </label>
+                <input type="password" name="tab_password" id="tab_password" placeholder="Пароль" required="">
+              </li>
+            </ul>
+            <div class="form__submit-wrapper">
+              <a href="#" name="reminder_link">Востановить пароль?
+              </a>
+              <button class="form__submit" type="submit" title="Войти">Войти
+              </button>
+            </div>
+          </form>
+
+          <div class="auth__login-social social">
+            <b>Или войти через:</b>
+            <div class="social__link">
+              <img class="social__vkontakte" src="img/icon-access-vk.png" id="auth_vk" alt="Изображение вконтакте">
+              <img class="social__facebook" src="img/icon-access-fb.png" id="auth_fb" alt="Изображение facebook">
+            </div>
           </div>
-        </div> -->
+        </div>
+
+        <div class="auth__form-wrapper">
+          <form class="auth__form form" action="#">
+            <div class="form__header-wrapper">
+              <p>Зарегистрируйтесь</p>
+              <a href="https://intui.travel/">
+                <img alt="Логотип трансферов Intui.Travel трансфер из аэропорта" src="img/logo_travel.png">
+              </a>
+            </div>
+            <ul class="form__list">
+              <li class="form__item">
+                <label class="visually-hidden" for="tab_email">E-mail
+                </label>
+                <input type="text" name="tab_email" id="tab_email" placeholder="E-mail" required="">
+              </li>
+              <li class="form__item">
+                <label class="visually-hidden" for="tab_name">Имя
+                </label>
+                <input type="text" name="tab_name" id="tab_name" placeholder="Имя" required="">
+              </li>
+              <li class="form__item">
+                <label class="visually-hidden" for="tab_surname">Фамилия
+                </label>
+                <input type="text" name="tab_surname" id="tab_surname" placeholder="Фамилия" required="">
+              </li>
+              <li class="form__item">
+                <div class="form__captcha">
+                  <p>Введите код с картинки</p>
+                  <label class="visually-hidden" for="tab_captcha">Код с картинки
+                  </label>
+                  <input type="text" name="tab_captcha" id="tab_captcha" placeholder="Код с картинки" required="">
+                </div>
+                  <img src="http://placehold.it/165x70" alt="Код с картинки" width="165" height="70">
+              </li>
+            </ul>
+            <div class="form__submit-wrapper">
+              <button class="form__submit" type="submit" title="Зарегистрироваться">Зарегистрироваться
+              </button>
+            </div>
+          </form>
+
+          <div class="auth__login-social social">
+            <b>Или войти через:</b>
+            <div class="social__link">
+              <img class="social__vkontakte" src="img/icon-access-vk.png" id="auth_vk" alt="Изображение вконтакте">
+              <img class="social__facebook" src="img/icon-access-fb.png" id="auth_fb" alt="Изображение facebook">
+            </div>
+          </div>
+        </div>
+
+
       </div>
-    </div>
-  </section>
-</main>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
 </body>
 </html>
