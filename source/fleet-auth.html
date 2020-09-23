@@ -84,8 +84,8 @@
 
       <div class="auth__wrapper">
         <div class="auth__tab-wrapper">
-          <div class="auth__tab auth__tab--travel" tabindex="0">Авторизация тревел агента</div>
-          <div class="auth__tab auth__tab--travel auth__tab--active" tabindex="0">Регистрация тревел агента</div>
+          <div class="auth__tab" tabindex="0">Авторизация</div>
+          <div class="auth__tab auth__tab--active" tabindex="0">Регистрация</div>
         </div>
 
         <div class="auth__form-wrapper auth__form-wrapper--hidden" id="auth">
@@ -106,8 +106,7 @@
                 <input type="text"
                        name="tab_login"
                        id="tab_login"
-                       placeholder="URL сайта или название компании
-                       или Стр. в соц сети:"
+                       placeholder="Логин"
                        required>
               </li>
               <li class="form__item">
@@ -155,17 +154,6 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="visually-hidden"
-                      for="tab_url">URL сайта или название
-                      компании или cтр. в соц сети
-                </label>
-                <input type="text"
-                       name="tab_url"
-                       id="tab_url"
-                       placeholder="URL сайта или название компании или cтр. в соц сети"
-                       required>
-              </li>
-              <li class="form__item">
-                <label class="visually-hidden"
                       for="tab_name">ФИО ответственного за заключение Договора
                 </label>
                 <input type="text"
@@ -183,28 +171,6 @@
                        id="tab_email"
                        placeholder="E-mail"
                        required>
-              </li>
-              <li class="form__item form__item--currency">
-                <p>Валюта для билинга</p>
-                <input type="radio"
-                       name="tab_currency"
-                       id="tab_eur"
-                       checked
-                       required>
-                <label for="tab_eur">eur</label>
-                <input type="radio"
-                       name="tab_currency"
-                       id="tab_rub"
-                       required>
-                <label for="tab_rub">rub</label>
-              </li>
-              <li class="form__item form__item--terms">
-                <input type="checkbox"
-                       name="tab_terms"
-                       id="tab_terms"
-                       required>
-                <label for="tab_terms"><a href="#">Я прочитал и принял условия Соглашения</a>
-                </label>
               </li>
               <li class="form__item form__item--captcha">
                 <img src="http://placehold.it/304x92" alt="Код с картинки" width="304" height="92">
@@ -237,9 +203,6 @@
       </div>
     </section>
   </main>
-
-  <a href="fleet-auth.html">fleet-auth.html</a>
-  <a href="user-auth.html">user-auth.html</a>
   <script src="js/main.js"></script>
 </body>
 </html>

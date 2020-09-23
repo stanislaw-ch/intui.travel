@@ -9,15 +9,9 @@
     font-weight: normal;
   }
 
-  // & p {
-  // }
-
   &__wrapper {
     width: 500px;
   }
-
-  // &__greeting {
-  // }
 
   &__tab-wrapper {
     display: flex;
@@ -26,17 +20,24 @@
   &__tab {
     display: flex;
     align-items: center;
-    height: 30px;
-    padding: 0 15px;
+    justify-content: center;
+    padding: 7px 15px;
+
+    text-align: center;
 
     background-color: #fdfdfd;
     border: 1px solid #eeeeee;
+
+    &--travel {
+      width: 100%;
+    }
 
     &--active {
       color: #fdfdfd;
 
       background-color: #102d6d;
       border: 1px solid #102d6d;
+      outline: 1px solid #102d6d;
 
       pointer-events: none;
     }
@@ -46,6 +47,7 @@
     color: #ffffff;
 
     background-color: #102d6d;
+    border: 1px solid #102d6d;
     cursor: pointer;
   }
 
@@ -61,7 +63,6 @@
 
   &__form {
     width: 500px;
-    // height: 220px;
     padding-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
@@ -69,7 +70,7 @@
 
     background-color: #fdfdfd;
     border: 1px solid #eeeeee;
-    border-top: 3px solid #ff0000;
+    border-top: 3px solid #da251c;
   }
 
   &__login-social {
@@ -85,6 +86,23 @@
     }
 
     &__form {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .auth {
+    & > p {
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .auth {
+    &__tab {
       width: 100%;
     }
   }

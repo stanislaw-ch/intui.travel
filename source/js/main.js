@@ -2,8 +2,25 @@
 
 (function () {
   var tabs = document.querySelector('.auth__wrapper');
-  var tabslink = tabs.querySelectorAll('.auth__tab');
-  var tabsElement = tabs.querySelectorAll('.auth__form-wrapper');
+  var tablinks = tabs.querySelectorAll('.auth__tab');
+  var tabElements = tabs.querySelectorAll('.auth__form-wrapper');
+
+  var hiddenTabElement = function () {
+    for (var i = 0; i < tabElements.length; i++) {
+      tabElements[i].classList.add('auth__form-wrapper--hidden');
+    }
+  };
+
+  var hiddenTablink = function () {
+    for (var j = 0; j < tablinks.length; j++) {
+      tablinks[j].classList.remove('auth__tab--active');
+    }
+  };
+
+  var showTabElement = function (onClickTab, hideTab) {
+    onClickTab.classList.add('auth__tab--active');
+    hideTab.classList.remove('auth__form-wrapper--hidden');
+  };
 
   /**
    * Делает активным таб по клику
@@ -12,20 +29,22 @@
    */
   var onTabClickChange = function (onClickTab, hideTab) {
     onClickTab.addEventListener('click', function () {
-      for (var i = 0; i < tabsElement.length; i++) {
-        tabsElement[i].classList.add('auth__form-wrapper--hidden');
-      }
-      for (var j = 0; j < tabslink.length; j++) {
-        tabslink[j].classList.remove('auth__tab--active');
-      }
+      hiddenTabElement();
+      hiddenTablink();
+      showTabElement(onClickTab, hideTab);
+    });
 
-      onClickTab.classList.add('auth__tab--active');
-      hideTab.classList.remove('auth__form-wrapper--hidden');
+    onClickTab.addEventListener('keydown', function (evt) {
+      if (evt.key === 'Enter') {
+        hiddenTabElement();
+        hiddenTablink();
+        showTabElement(onClickTab, hideTab);
+      }
     });
   };
 
-  // Передает элемет таба по клику
-  for (var j = 0; j < tabslink.length; j++) {
-    onTabClickChange(tabslink[j], tabsElement[j]);
+  // Передает элемент таба по клику
+  for (var j = 0; j < tablinks.length; j++) {
+    onTabClickChange(tablinks[j], tabElements[j]);
   }
 })();

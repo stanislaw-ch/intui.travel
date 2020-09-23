@@ -23,25 +23,77 @@
 
   &__item {
     margin-bottom: 15px;
-  }
 
-  &__item:last-of-type {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 0;
-  }
+    &--currency {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 15px;
 
-  &__item input {
-    width: 100%;
-    padding: 7px 0 7px 10px;
+      & p {
+        padding-bottom: 3px;
+        margin: 0 25px 0 0;
+        font-size: 14px;
+      }
 
-    border: 1px solid #eeeeee;
-  }
+      & label {
+        margin: 0 15px 0 5px;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
 
-  &__item input:hover,
-  &__item input:focus {
-    border: 1px solid #0c2969;
+      & label:last-of-type {
+        margin: 0 0 0 5px;
+      }
+    }
+
+    &--terms {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 15px;
+
+      & label {
+        padding-bottom: 3px;
+        margin: 0 0 0 10px;
+
+        & a {
+          text-decoration: underline;
+          font-size: 14px;
+        }
+      }
+    }
+
+    & input[type="radio"] {
+      margin: 0;
+      width: 15px;
+    }
+
+    & input[type="checkbox"] {
+      margin: 0;
+      width: 15px;
+    }
+
+    &--captcha {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    & input {
+      width: 100%;
+      padding: 7px 0 7px 10px;
+
+      border: 1px solid #eeeeee;
+    }
+
+    input:hover,
+    input:focus {
+      border: 1px solid #102d6d;
+    }
   }
 
   &__submit-wrapper {
@@ -58,8 +110,6 @@
   }
 
   &__submit {
-    // width: 100px;
-    // height: 30px;
     padding: 8px 19px;
     margin-left: 15px;
 
@@ -87,7 +137,7 @@
 
   &__captcha input {
     width: 100%;
-    height: 32px;
+    padding: 7px 0 7px 10px;
   }
 }
 
@@ -102,8 +152,12 @@
       margin-bottom: 10px;
     }
 
-    &__submit {
-      margin-left: auto;
+    &__item input {
+      padding: 15px 0 15px 10px;
+    }
+
+    &__captcha input {
+      padding: 15px 0 15px 10px;
     }
   }
 }
@@ -112,6 +166,36 @@
   .form {
     &__submit {
       margin-left: auto;
+    }
+
+    &__item {
+      // &--currency {
+      //   & p {
+      //   }
+      // }
+
+      &--terms {
+        & label {
+          margin: 0 0 0 15px;
+
+          & a {
+            text-decoration: underline;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .form {
+    &__item {
+      &--currency {
+        & p {
+          margin: 0 9px 0 0;
+        }
+      }
     }
   }
 }
