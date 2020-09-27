@@ -236,6 +236,11 @@
       color: #da251c;
     }
 
+    & a:not([href]) {
+      pointer-events: none;
+      text-decoration: none;
+    }
+
     &--active a {
       text-decoration: none;
       color: #9f9d9d;
