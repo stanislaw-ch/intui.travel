@@ -8,234 +8,145 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="f">
-    <div><p>
-      <a href="https://intui.travel/"><img alt="Логотип трансферов Intui.Travel трансфер из аэропорта" src="img/logo_travel.png"></a></p>
-    </div>
-
-    <div class="menu fi-right" id="lang_curr">
-        <input id="nav_curr" type="radio" name="nav">
-        <label class="flag ru" for="nav_curr">ru | RUB</label>
-        <div class="dropdown f w">
-            <a href="https://en.intui.travel/" class="flag en">EN</a>
-            <a href="https://www.intui.travel/" class="flag ru">RU</a>
-            <a href="https://de.intui.travel/" class="flag de">DE</a>
-            <a href="https://it.intui.travel/" class="flag it">IT</a>
-            <a href="https://fr.intui.travel/" class="flag fr">FR</a>
-            <a href="https://es.intui.travel/" class="flag es">ES</a>
-            <a href="https://cn.intui.travel/" class="flag cn">CN</a>
-            <hr>
-            <a href="/?forcibly_currency=EUR" class="curr">EUR</a>
-            <a href="/?forcibly_currency=USD" class="curr">USD</a>
-            <a href="/?forcibly_currency=RUB" class="curr">RUB</a>
-            <a href="/?forcibly_currency=GBP" class="curr">GBP</a>
-
-            <a href="/?forcibly_currency=AUD" class="curr">AUD</a>
-            <a href="/?forcibly_currency=SGD" class="curr">SGD</a>
-            <a href="/?forcibly_currency=CNY" class="curr">CNY</a>
-            <a href="/?forcibly_currency=CAD" class="curr">CAD</a>
-
-            <a href="/?forcibly_currency=INR" class="curr">INR</a>
-            <a href="/?forcibly_currency=UAH" class="curr">UAH</a>
-            <a href="/?forcibly_currency=CHF" class="curr">CHF</a>
-            <a href="/?forcibly_currency=ZAR" class="curr">ZAR</a>
-
-            <a href="/?forcibly_currency=AED" class="curr">AED</a>
-            <a href="/?forcibly_currency=ILS" class="curr">ILS</a>
-            <a href="/?forcibly_currency=HKD" class="curr">HKD</a>
-            <a href="/?forcibly_currency=CZK" class="curr">CZK</a>
-
-            <a href="/?forcibly_currency=BRL" class="curr">BRL</a>
-            <a href="/?forcibly_currency=JPY" class="curr">JPY</a>
-        </div>
-    </div>
-    <div class="xm"></div>
-    <div class="f mlist">
-        <div class="menu">
-            <input id="nav_main" type="radio" name="nav">
-            <label for="nav_main">Мой кабинет <img alt="menu" class=" lazyloaded" data-src="/web/main/assets/img/arrow_down.svg" src="img/arrow_down.svg"></label>
-            <div class="dropdown f c">
-                                        <a rel="nofollow" href="/account/auth/?return_lnk=Lw%3D%3D6373ff15b956ed52b2a2a6f918efa0ec" title="Вход для Клиента" class="header_menu_a_item"> Вход для Клиента</a>
-                    <a rel="nofollow" href="/account/registration/?return_lnk=Lw%3D%3D6373ff15b956ed52b2a2a6f918efa0ec" title="Регистрация для Клиента" class="header_menu_a_item">Регистрация для Клиента</a>
-                                    <hr>
-                                                                                                    <a rel="nofollow" href="https://partner.intui.travel/ru/auth/ " title="Вход для Агентства}" class="getLoginLink header_menu_a_item">Вход для Агентства</a>
-                            <a rel="nofollow" href="https://partner.intui.travel/ru/registration/" title="Регистрация для Агентства" class="getRegLink header_menu_a_item">Регистрация для Агентства</a>
-
-                <hr>
-                                        <a rel="nofollow" href="https://fleet.intui.travel/ru/auth/" title="Вход для компании перевозчика" class="header_menu_a_item">Вход для компании перевозчика</a>
-                    <a rel="nofollow" href="https://fleet.intui.travel/ru/registration/" title="Регистрация компании перевозчика" class="header_menu_a_item">Регистрация компании перевозчика</a>
-                                </div>
-        </div>
-        <div class="menu">
-            <input id="nav_help" type="radio" name="nav">
-            <label for="nav_help">Задать вопрос <img alt="menu" class=" lazyloaded" data-src="/web/main/assets/img/arrow_down.svg" src="img/arrow_down.svg"></label>
-            <div class="dropdown f c">
-                <a href="https://intui.kayako.com/ru/conversation/new" title="Спросить" id="top-main-menu-54963" target="_blank">Спросить</a>
-            </div>
-        </div>
-    </div>
-</header>
+  <header>
+    <img src="http://placehold.it/1070x79" alt="Шапка сайта" width="1070" height="79">
+  </header>
 
   <main>
-    <section class="auth">
-      <h1 class="visually-hidden">Форма регистрации</h1>
-      <h2>Добро пожаловать!</h2>
-      <p>Войдите в личный кабинет или зарегистрируйтесь</p>
+    <section class="news">
+      <h1>Новости</h1>
 
-      <div class="auth__wrapper">
-        <div class="auth__tab-wrapper">
-          <div class="auth__tab auth__tab--travel" tabindex="0">Авторизация тревел агента</div>
-          <div class="auth__tab auth__tab--travel auth__tab--active" tabindex="0">Регистрация тревел агента</div>
-        </div>
-
-        <div class="auth__form-wrapper auth__form-wrapper--hidden" id="auth">
-          <form class="auth__form form"
-                action="#">
-            <div class="form__header-wrapper">
-              <p>Авторизируйтесь</p>
-              <a href="https://intui.travel/">
-                <img alt="Логотип трансферов Intui.Travel трансфер из аэропорта"
-                     src="img/logo_travel.png">
-              </a>
-            </div>
-            <ul class="form__list">
-              <li class="form__item">
-                <label for="tab_login">Введите URL сайта или название компании или стр. в соц сети:
-                </label>
-                <input type="text"
-                       name="tab_login"
-                       id="tab_login"
-                       placeholder="Пример: www.nameofsite.ru"
-                       required>
-                <!-- <span class="form__error">Текст ошибки</span> -->
-              </li>
-              <li class="form__item">
-                <label for="tab_password">Введите ващ пароль:
-                </label>
-                <input type="password"
-                       name="tab_password"
-                       id="tab_password"
-                       placeholder=""
-                       required>
-                <!-- <span class="form__error">Текст ошибки</span> -->
-              </li>
-            </ul>
-            <div class="form__submit-wrapper">
-              <a href="#"
-                name="reminder_link">Востановить пароль?
-              </a>
-              <button class="form__submit"
-                      type="submit"
-                      title="Войти">Войти
-              </button>
-            </div>
-          </form>
-
-          <div class="auth__login-social social">
-            <b>Или войти через:</b>
-            <div class="social__link">
-              <img class="social__vkontakte"
-                  src="img/icon-access-vk.png"
-                  id="auth_vk"
-                  alt="Изображение вконтакте">
-              <img class="social__facebook"
-                  src="img/icon-access-fb.png"
-                  id="auth_fb"
-                  alt="Изображение facebook">
-            </div>
+      <article class="news__item">
+        <div class="news__item-wrapper">
+          <span class="news__item-date news__item-date--current"><span>19</span> Сен 2020</span>
+          <div class="news__item-picture">
+            <a href="#">
+              <img class="lazyload" data-src="img/news1-desktop-1x.jpg" alt="Изображение новости" width="439" height="229">
+            </a>
           </div>
         </div>
+        <div class="news__item-article">
+          <h2>
+            <a href="#">За 2 часа до начала выполнения трансфера теперь можно оформить заказ!</a>
+          </h2>
+          <p>Отличная новость: ограничения по времени до начала выполнения трансфера - сокращены. На Intui есть предложения от транспортных компаний, которые готовы принять заказ за 2 часа до поездки трансфером. Пандемия сбавляет обороты и путешественники понемногу возвращаются к обычному ритму жизни. Для тех, кто принял решение о поездке в последний момент, если вы не успели заказать трансфер вовремя, если ваши планы изменились или если нужно срочно помочь с транспортировкой родственнику коллеге - Intui поможет!</p>
+          <a href="#">подробнее</a>
+        </div>
+      </article>
 
-        <div class="auth__form-wrapper" id="registration">
-          <form class="auth__form form"
-                action="#">
-            <div class="form__header-wrapper">
-            </div>
-            <ul class="form__list">
-              <li class="form__item">
-                <label for="tab_url">Введите URL сайта или название компании или cтр. в соц сети:
-                </label>
-                <input type="text"
-                       name="tab_url"
-                       id="tab_url"
-                       placeholder="Пример: www.nameofsite.ru"
-                       required>
-              </li>
-              <li class="form__item">
-                <label for="tab_name">Введите ФИО ответственного за заключение Договора:
-                </label>
-                <input type="text"
-                       name="tab_name"
-                       id="tab_name"
-                       placeholder=""
-                       required>
-              </li>
-              <li class="form__item">
-                <label for="tab_email">Введите ваш E-mail:
-                </label>
-                <input type="text"
-                       name="tab_email"
-                       id="tab_email"
-                       placeholder=""
-                       required>
-                <span class="form__error">Текст ошибки</span>
-              </li>
-              <li class="form__item form__item--currency">
-                <p>Валюта для билинга</p>
-                <input type="radio"
-                       name="tab_currency"
-                       id="tab_eur"
-                       checked
-                       required>
-                <label for="tab_eur">eur</label>
-                <input type="radio"
-                       name="tab_currency"
-                       id="tab_rub"
-                       required>
-                <label for="tab_rub">rub</label>
-              </li>
-              <li class="form__item form__item--terms">
-                <input type="checkbox"
-                       name="tab_terms"
-                       id="tab_terms"
-                       required>
-                <label for="tab_terms"><a href="#">Я прочитал и принял условия Соглашения</a>
-                </label>
-              </li>
-              <li class="form__item form__item--captcha">
-                <img src="http://placehold.it/304x92" alt="Код с картинки" width="304" height="92">
-              </li>
-            </ul>
-            <div class="form__submit-wrapper">
-              <button class="form__submit"
-                      type="submit"
-                      title="Зарегистрироваться">Зарегистрироваться
-              </button>
-            </div>
-          </form>
-
-          <div class="auth__login-social social">
-            <b>Или войти через:</b>
-            <div class="social__link">
-              <img class="social__vkontakte"
-                  src="img/icon-access-vk.png"
-                  id="auth_vk"
-                  alt="Изображение вконтакте">
-              <img class="social__facebook"
-                  src="img/icon-access-fb.png"
-                  id="auth_fb"
-                  alt="Изображение facebook">
-            </div>
+      <article class="news__item">
+        <div class="news__item-wrapper">
+          <span class="news__item-date"><span>18</span> Сен 2020</span>
+          <div class="news__item-picture">
+            <a href="#">
+              <img class="lazyload" data-src="img/news2-desktop-1x.jpg" alt="Изображение новости" width="403" height="248">
+            </a>
           </div>
         </div>
+        <div class="news__item-article">
+          <h2>
+            <a href="#">Едем греться! Теплые моря в пост-COVID эпоху</a>
+          </h2>
+          <p>Отдых не только на диване у телевизора все-таки реален в этом году!  Даже если ваш отпуск откладывается, ещё есть возможность провести отпуск в теплых водах морских, зарядиться йодом, кислородом и солнечными лучами на предстоящую зиму. Воды Красного моря и Персидского залива  настолько теплые, что вы еще успеете и осенью погреться! Египет и Дубаи открыты для приема туристов.
+          </p>
+          <a href="#">подробнее</a>
+        </div>
+      </article>
 
+      <article class="news__item">
+        <div class="news__item-wrapper">
+          <span class="news__item-date"><span>15</span> Сен 2020</span>
+          <div class="news__item-picture">
+            <a href="#">
+              <img class="lazyload" data-src="img/news3-desktop-1x.jpg" alt="Изображение новости" width="403" height="158">
+            </a>
+          </div>
+        </div>
+        <div class="news__item-article">
+          <h2>
+            <a href="#">Едят ли туристов на завтрак?</a>
+          </h2>
+          <p>Рыбалка в синих водах у солнечных берегов Занзибара или подразнить львов на материке - всё это возможно в Танзании</p>
+          <a href="#">подробнее</a>
+        </div>
+      </article>
 
+      <article class="news__item">
+        <div class="news__item-wrapper">
+          <span class="news__item-date"><span>11</span> Сен 2020</span>
+          <div class="news__item-picture">
+            <a href="#">
+              <img class="lazyload" data-src="img/news4-desktop-1x.jpg" alt="Изображение новости" width="403" height="174">
+            </a>
+          </div>
+        </div>
+        <div class="news__item-article">
+          <h2>
+            <a href="#">Экзотическая Танзания, горячая Турция и Великобритания - готовы встретить туристов</a>
+          </h2>
+          <p>Великолепные новости! Страны начинают открывать границы для туристов, как для своих, выезжающих, так и прибывающих из других стран. Вот и в РФ решились и открылись для трёх стран. И вам уже можно активно паковать чемоданы на сытые и приветливые берега турецкие, на чай с молоком к самой королеве Елизавете или до подножия Килиманджаро для прогулок с гиппопо.</p>
+          <a href="#">подробнее</a>
+        </div>
+      </article>
+
+      <article class="news__item">
+        <div class="news__item-wrapper">
+          <span class="news__item-date"><span>10</span> Сен 2020</span>
+          <div class="news__item-picture">
+            <a href="#">
+              <img class="lazyload" data-src="img/news5-desktop-1x.jpg" data-srcset="img/news5-desktop-1x.jpg 1x" alt="Изображение новости" width="403" height="203">
+            </a>
+          </div>
+        </div>
+        <div class="news__item-article">
+          <h2>
+            <a href="#">Арендовать авто или заказать трансфер - автомобиль с водителем. Сравнение стоимости : что дешевле для путешествия за границей</a>
+          </h2>
+          <p>В отпуск, на отдых или деловая поездка - во всех случаях вам потребуется добраться из аэропорта или вокзала в отель или апартаменты.  Комфортные способы доехать в незнакомой обстановке - это арендовать автомобиль и управлять самостоятельно, или заказать трансфер - автомобиль с водителем. Что выгоднее? Сравним...
+          </p>
+          <a href="#">подробнее</a>
+        </div>
+      </article>
+
+      <div class="news__pagination">
+        <div class="news__pagination-wrapper">
+          <button class="news__btn news__btn--prev" type="button" disabled>предыдущая</button>
+          <ul class="news__nav">
+            <li class="news__nav-item news__nav-item--active">
+              <a href="#">1</a>
+            </li>
+            <li class="news__nav-item">
+              <a href="#">2</a>
+            </li>
+            <li class="news__nav-item">
+              <a href="#">3</a>
+            </li>
+            <li class="news__nav-item">
+              <a href="#">...</a>
+            </li>
+            <li class="news__nav-item">
+              <a href="#">6</a>
+            </li>
+            <li class="news__nav-item">
+              <a href="#">7</a>
+            </li>
+            <li class="news__nav-item">
+              <a href="#">8</a>
+            </li>
+          </ul>
+          <button class="news__btn news__btn--next" type="button">следующая</button>
+        </div>
       </div>
     </section>
   </main>
 
+  <footer>
+    <img src="http://placehold.it/981x302" alt="Подвал сайта" width="981" height="302">
+  </footer>
+
   <a href="fleet-auth.html">fleet-auth.html</a>
   <a href="user-auth.html">user-auth.html</a>
-  <script src="js/main.js"></script>
+  <a href="parther-auth.html">parther-auth.html</a>
+  <script src="js/lazy-load.js"></script>
 </body>
 </html>

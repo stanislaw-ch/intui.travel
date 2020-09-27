@@ -20,8 +20,8 @@
 
       <div class="auth__wrapper">
         <div class="auth__tab-wrapper">
-          <div class="auth__tab" tabindex="0">Авторизация</div>
-          <div class="auth__tab auth__tab--active" tabindex="0">Регистрация</div>
+          <div class="auth__tab auth__tab--travel" tabindex="0">Авторизация тревел агента</div>
+          <div class="auth__tab auth__tab--travel auth__tab--active" tabindex="0">Регистрация тревел агента</div>
         </div>
 
         <div class="auth__form-wrapper auth__form-wrapper--hidden" id="auth">
@@ -36,26 +36,23 @@
             </div>
             <ul class="form__list">
               <li class="form__item">
-                <label class="visually-hidden"
-                       for="tab_login">Логин
+                <label for="tab_login">Введите URL сайта или название компании или стр. в соц сети:
                 </label>
                 <input type="text"
                        name="tab_login"
                        id="tab_login"
-                       placeholder="Логин"
+                       placeholder="Пример: www.nameofsite.ru"
                        required>
-                <span class="form__error form__error--hidden">Текст ошибки</span>
               </li>
               <li class="form__item">
-                <label class="visually-hidden"
-                       for="tab_password">Пароль
+                <label for="tab_password">Введите ващ пароль:
                 </label>
                 <input type="password"
                        name="tab_password"
                        id="tab_password"
-                       placeholder="Пароль"
+                       placeholder=""
                        required>
-                <span class="form__error">Текст ошибки</span>
+                <span class="form__error form__error--hidden">Текст ошибки</span>
               </li>
             </ul>
             <div class="form__submit-wrapper">
@@ -91,6 +88,15 @@
             </div>
             <ul class="form__list">
               <li class="form__item">
+                <label for="tab_url">Введите URL сайта или название компании или cтр. в соц сети:
+                </label>
+                <input type="text"
+                       name="tab_url"
+                       id="tab_url"
+                       placeholder="Пример: www.nameofsite.ru"
+                       required>
+              </li>
+              <li class="form__item">
                 <label for="tab_name">Введите ФИО ответственного за заключение Договора:
                 </label>
                 <input type="text"
@@ -109,6 +115,28 @@
                        required>
                 <span class="form__error">Текст ошибки</span>
               </li>
+              <li class="form__item form__item--currency">
+                <p>Валюта для билинга</p>
+                <input type="radio"
+                       name="tab_currency"
+                       id="tab_eur"
+                       checked
+                       required>
+                <label for="tab_eur">eur</label>
+                <input type="radio"
+                       name="tab_currency"
+                       id="tab_rub"
+                       required>
+                <label for="tab_rub">rub</label>
+              </li>
+              <li class="form__item form__item--terms">
+                <input type="checkbox"
+                       name="tab_terms"
+                       id="tab_terms"
+                       required>
+                <label for="tab_terms"><a href="#">Я прочитал и принял условия Соглашения</a>
+                </label>
+              </li>
               <li class="form__item form__item--captcha">
                 <img src="http://placehold.it/304x92" alt="Код с картинки" width="304" height="92">
               </li>
@@ -121,17 +149,18 @@
             </div>
           </form>
         </div>
+
+
       </div>
     </section>
   </main>
 
+  <a href="fleet-auth.html">fleet-auth.html</a>
   <a href="user-auth.html">user-auth.html</a>
-  <a href="parther-auth.html">parther-auth.html</a>
 
   <footer>
     <img src="http://placehold.it/981x302" alt="Подвал сайта" width="981" height="302">
   </footer>
-
 
   <script src="js/main.js"></script>
 </body>

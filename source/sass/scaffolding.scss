@@ -49,3 +49,20 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+header,
+footer {
+  max-width: 1070px;
+  margin: 0 auto;
+}
+
+header img {
+  min-height: 79px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  min-height: 302px;
+}
