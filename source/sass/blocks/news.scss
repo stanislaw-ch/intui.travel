@@ -192,6 +192,13 @@
   &__btn[type="button"]:disabled {
     text-decoration: none;
     pointer-events: none;
+    color: #9f9d9d;
+
+    &::before,
+    &::after {
+
+      background-color: #9f9d9d;
+    }
   }
 
   &__btn:hover {
