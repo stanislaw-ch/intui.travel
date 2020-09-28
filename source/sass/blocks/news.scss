@@ -271,6 +271,28 @@
   .news {
     padding: 0 20px;
 
+    &__item {
+      position: relative;
+    }
+
+    &__item-picture {
+      margin-top: 40px;
+    }
+
+    &__item-article h2 {
+      position: absolute;
+      top: 100px;
+      left: 0;
+
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    &__item-article h2 a {
+      display: block;
+      text-align: center;
+    }
+
     &__item-wrapper {
       flex-direction: column;
     }
@@ -292,6 +314,10 @@
 
 @media (max-width: 450px) {
   .news {
+    &__item-picture {
+      margin-top: 60px;
+    }
+
     &__nav-item:nth-child(2),
     &__nav-item:nth-child(3),
     &__nav-item:nth-child(5),
